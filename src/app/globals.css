@@ -24,3 +24,41 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.titre-section {
+  @apply text-2xl font-bold bg-emerald-300 mb-4;
+}
+
+.paragraphe {
+  @apply text-gray-300 leading-relaxed mb-4;
+}
+
+.conteneur-principal {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+.bouton-principal {
+  @apply bg-emerald-600 text-white font-semibold py-2 px-4 rounded hover:bg-emerald-500 transition duration-200;
+}
+
+/* ========== Styles utilitaires supplémentaires ========== */
+
+.navbar {
+  @apply fixed top-0 left-0 w-full bg-emerald-800 text-gray-100 py-4 px-8 shadow-md z-50;
+}
+
+.footer {
+  @apply bg-gray-800 text-gray-400 py-6 mt-12 text-center text-sm;
+}
+
+.section {
+  @apply my-12;
+}
+
+.titre-page {
+  @apply text-3xl font-bold text-emerald-300 mb-6;
+}
+
+.bouton-secondaire {
+  @apply border border-emerald-600 text-emerald-400 font-medium py-2 px-4 rounded hover:bg-emerald-800 transition duration-200;
+}
