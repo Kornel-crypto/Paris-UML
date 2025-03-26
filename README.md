@@ -34,3 +34,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Illustration textuel du projet
+
+```bash
+
+📘 films
+├─ PK id_film
+├─ titre
+├─ FK id_realisateur → realisateurs.id_realisateur
+└─ FK id_producteur → producteurs.id_producteur
+
+📘 realisateurs
+└─ PK id_realisateur
+
+📘 producteurs
+└─ PK id_producteur
+
+📘 lieux
+└─ PK id_lieu
+
+📘 types_tournage
+└─ PK id_type
+
+📘 tournages
+├─ PK id_tournage
+├─ date_debut / date_fin / annee
+├─ FK id_film → films.id_film
+├─ FK id_lieu → lieux.id_lieu
+└─ FK id_type → types_tournage.id_type
+```
